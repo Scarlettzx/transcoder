@@ -2,14 +2,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'org.jetbrains.dokka-android'
+apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 33
     defaultConfig {
-        minSdkVersion 18
-        targetSdkVersion 26
+        minSdkVersion 26
+        targetSdkVersion 33
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -39,7 +40,7 @@ dokka {
     skipEmptyPackages = true
     linkMapping {
         dir = "src/main/java"
-        url = "https://github.com/WindSekirun/MediaResizer/tree/master/Resizer/src/main/java"
+        url = "https://github.com/Scarlettzx/transcoder/tree/master/Resizer/src/main/java"
         suffix = "#L"
     }
 }
